@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="myTheme" parent="@style/Holo.Theme">
+
+        <!-- If you want to use the default ViewPagerIndicator-styles, use the following: -->
+        <!-- <item name="vpiTitlePageIndicatorStyle">@style/Widget.TitlePageIndicator</item> -->
+        <item name="vpiTabPageIndicatorStyle">@style/MyTabPageIndicator</item>
+        <!-- <item name="vpiTabTextStyle">@style/Widget.TabPageIndicator.Text</item> -->
+
+
+        <!-- If you want to implement your custom style of CirclePageIndicator, do it like so: -->
+        <!-- <item name="vpiCirclePageIndicatorStyle">@style/myCirclePageIndicator</item> -->
+        <!-- Put whatever other styles you want to define in your custom theme -->
+
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+
+    <style name="MyTabPageIndicator" parent="Widget.TabPageIndicator">
+
+        <!-- <item name="android:gravity">center</item> -->
+        <item name="android:background">@drawable/tab_indicator_holo</item>
+        <!--
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+        -->
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/header</item>
+        <item name="background">@drawable/header</item>
+        <item name="android:height">50dp</item>
+        <item name="titleTextStyle">@style/myTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="myTheme.ActionBar.TitleTextStyle" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+	  <style name="EditEventCustomActionButton" parent="@style/Widget.Sherlock.ActionButton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="EditEventCustomActionButtonImage">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="EditEventCustomActionButtonText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        
+        <item name="android:textAppearance">?attr/actionMenuTextAppearance</item>
+        <item name="android:textColor">?attr/actionMenuTextColor</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="linkText">
+        <item name="android:textColor">#EA5400</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="labelText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="inputText">
+        <item name="android:textColor">#ededed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@drawable/input</item>
+        <item name="android:height">48dp</item>
+    </style>
+
+    <style name="listas">
+        <item name="android:divider">@drawable/separador</item>
+        <item name="android:dividerHeight">2dp</item>
+    </style>
+
+    <style name="Widget.MyTitlepageIndicator">
+        <item name="footerColor">#FF0000</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="footerIndicatorHeight">3dp</item>
+        <item name="footerLineHeight">1.5dp</item>
+        <item name="footerPadding">6dp</item>
+        <item name="selectedColor">#ffffffff</item>
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:background">#FF0000</item>
+    </style>
+
+    <style name="TextoCabecera">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="TextoInstruccion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="panelAcciones">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/bgpanelacciones</item>
+    </style>
+
+    <style name="panelScroll">
+        <item name="android:background">@drawable/bg_scroll</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="iconoBienvenida">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+</resources>

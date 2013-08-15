@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="intervalo">
+     <item>Cada 5 minutos</item>
+     <item>Cada 10 minutos</item>
+     <item>Cada 15 minutos</item>
+     <item>Cada 20 minutos</item>
+     <item>Cada 25 minutos</item>
+     <item>Cada 30 minutos</item>
+     <item>Cada 40 minutos</item>
+     <item>Cada 45 minutos</item>
+     <item>Cada 50 minutos</item>
+     <item>Cada 55 minutos</item>
+     <item>Cada 60 minutos</item>
+     <item>Cada 65 minutos</item>
+     <item>Cada 70 minutos</item>
+     <item>Cada 75 minutos</item>
+    </string-array>
+     
+     <string-array name="intervalo_values">
+     <item>5</item>
+     <item>10</item>
+     <item>15</item>
+     <item>20</item>
+     <item>25</item>
+     <item>30</item>
+     <item>40</item>
+     <item>45</item>
+     <item>50</item>
+     <item>55</item>
+     <item>60</item>
+     <item>65</item>
+     <item>70</item>
+     <item>75</item>
+    </string-array>
+    
+         <string-array name="intervalo_recordatorio_text">
+     <item>1 Hora</item>
+     <item>2 Horas</item>
+     <item>4 Horas</item>
+     <item>6 Horas</item>
+     <item>12 Horas</item>
+    </string-array>
+     
+     <string-array name="intervalo_recordatorio_values">
+     <item>1</item>
+     <item>2</item>
+     <item>4</item>
+     <item>6</item>
+     <item>12</item>
+    </string-array>
+     
+     
+    <string-array name ="intervalo_panic_sms">
+        <item>1 Minuto</item>
+        <item>2 Minutos</item>
+        <item>3 Minutos</item>
+        <item>4 Minutos</item>
+        <item>5 Minutos</item>
+        <item>6 Minutos</item>
+    </string-array>
+    <string-array name ="intervalo_panic_sms_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+     
+     
+              <string-array name="intervalo_cancelacion">
+    	<item>1 segundo</item>
+     <item>2 segundo</item>
+	 <item>3 segundo</item>
+	 <item>4 segundo</item>
+	 <item>5 segundo</item>
+	 <item>6 segundo</item>
+	 <item>7 segundo</item>
+	 <item>8 segundo</item>
+	 <item>9 segundo</item>
+	 <item>10 segundos</item>
+    </string-array>
+                  <string-array name="intervalo_cancelacion_values">
+    	<item>1</item>
+     <item>2</item>
+	 <item>3</item>
+	 <item>4</item>
+	 <item>5</item>
+	 <item>6</item>
+	 <item>7</item>
+	 <item>8</item>
+	 <item>9</item>
+	 <item>10</item>
+    </string-array>
+    <string-array name="lista_ongs">
+        <item>Comité para la Protección de los Periodistas (CPJ)</item>
+        <item>Periodistas de a Pie</item>
+        <item>FLIP</item>
+    </string-array>
+        <string-array name="lista_ongs_descripcion">
+        <item>CPJ promueve la libertad de prensa y defiende el derecho de los periodistas a informar sin temor a represalias. CPJ garantiza la libre circulación de noticias y opinión respondiendo a las situaciones en que los periodistas son atacados, encarcelados, asesinados, secuestrados, amenazados, censurados, o acosados​​.</item>
+        <item>Organización de periodistas en activo que busca elevar la calidad del periodismo en México a través de la capacitación. Desde el 2010 trabajan en la defensa de la libertad de expresión y del derecho a la información, así como las coberturas  en zonas de conflicto y la protección y autocuidado de periodistas.</item>
+        <item>La Fundación para la Libertad de Prensa promueve y defiende la libertad de expresión y el derecho al acceso a la información en Colombia. Denuncia las violaciones a la libertad de prensa, contribuye a la protección de periodistas y facilita las condiciones legales y políticas para el ejercicio de estos derechos.﻿</item>
+    </string-array>
+    <string-array name="lista_ongs_id">
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+                  
+                  
+</resources>

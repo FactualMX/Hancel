@@ -1,0 +1,185 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/reg_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/reg_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Login form -->
+
+    <LinearLayout
+        android:id="@+id/reg1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/reg_form"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:fillViewport="true" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- Header  Starts -->
+                <!-- Header Ends -->
+                <!--
+              Footer Start 
+      		<LinearLayout android:id="@+id/footer"
+      				android:layout_width="fill_parent"
+      				android:layout_height="90dip"
+      				android:background="@layout/footer_repeat"
+      				android:layout_alignParentBottom="true">
+      		</LinearLayout>
+      		Footer Ends
+                -->
+
+
+                <!-- Registration Form -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <!-- Full Name Label -->
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/TextoCabecera"
+                        android:text="@string/registro1"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/TextoInstruccion"
+                        android:text="@string/ingreseDatos" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/separador" />
+
+                    <TextView
+                        style="@style/labelText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Usuario" />
+
+                    <EditText
+                        android:id="@+id/reg_fullname"
+                        style="@style/inputText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:singleLine="true" />
+
+                    <!-- Password Label -->
+
+                    <TextView
+                        style="@style/labelText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Contrasenia" />
+
+                    <EditText
+                        android:id="@+id/reg_password"
+                        style="@style/inputText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:password="true"
+                        android:singleLine="true" />
+   						<!-- Email Label -->
+
+                    <TextView
+                        style="@style/labelText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Email" />
+
+                    <EditText
+                        android:id="@+id/reg_email"
+                        style="@style/inputText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:singleLine="true" />
+                    
+                    
+                     
+                    <!-- Register Button -->
+                </LinearLayout>
+
+                <!-- Registration Form Ends -->
+
+                <TextView
+                    android:id="@+id/err_registro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/red_error"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/actions1"
+            style="@style/panelAcciones"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnCancelar"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@android:string/cancel" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Continuar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

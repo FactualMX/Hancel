@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panicScreenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextoInstruccion"
+            android:layout_marginTop="7dp"
+            android:text="@string/ultima"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7dp" >
+
+            <TextView
+                android:id="@+id/txtUltimaAlerta"
+                style="@style/TextoCabecera"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="15 - Abril - 08:30"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/separador" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btnPanico"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/panicbutton"
+            android:text="@string/Alerta"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/panelAcciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <fragment android:id="@+id/fragmentRastreo" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="org.hansel.myAlert/Rastreo"
+             tools:layout="@layout/fragment_rastreo"
+            />
+    </LinearLayout>
+
+</LinearLayout>

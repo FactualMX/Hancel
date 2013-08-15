@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">Hancel</string>
+    <string name="dialog_alarm_desc">Favor de deshabilitar la Alarma</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contrasenia">Contraseña</string>
+    <string name="Registrarme">Registrarme</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="errores">errores</string>
+    <string name="Email">Email</string>
+    <string name="crearcuenta">Crear Nueva Cuenta</string>
+    <string name="Alerta">Alerta</string>
+    <string name="Continuar">Continuar</string>
+    <string name="registro1">Registro: Paso 1 de 4</string>
+    <string name="registro2">Registro: Paso 2 de 4</string>
+    <string name="registro3">Registro: Paso 3 de 4</string>
+    <string name="registro4">Registro: Paso 4 de 4</string>
+    <string name="ingreseDatos">Ingrese los siguientes datos</string>
+    <string name="ingreseONGS">Selecciones las ONGs a las cuales enviará alertas</string>
+    <string name="ingreseContactos">Agregue contactos a los que se enviarán alertas</string>
+    <string name="finRegistro">Felicidades, ha concluido su registro en Hancel pulse finalizar para empezar a utilizar hancel</string>
+    <string name="bienvenido">Bienvenido a Hancel</string>
+    <string name="ultima">Fecha y hora de la última alerta</string>
+    <string name="programarrastreo">Programar rastreo</string>
+    <string name="current_track_info">Rastreo programado para:</string>
+
+</resources>

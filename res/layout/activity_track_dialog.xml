@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtStartingTrackDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha y Hora de inicio:" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtStartingTrackDate"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnStartTrackDate"
+            style="@style/Widget.Sherlock.Spinner.DropDown.ActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btnStartTrackHour"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btnStartTrackHour"
+            style="@style/Widget.Sherlock.Spinner.DropDown.ActionBar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="12 PM" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnResetInictalTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="5dp"
+        android:text="Restablecer a la hora actual" />
+
+    <TextView
+        android:id="@+id/txtEndTrackDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnResetInictalTrack"
+        android:layout_marginTop="14dp"
+        android:text="Fecha y Hora de fin" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtEndTrackDate"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnEndTrackDate"
+            style="@style/Widget.Sherlock.Spinner.DropDown.ActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btnEndTrackHour"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btnEndTrackHour"
+            style="@style/Widget.Sherlock.Spinner.DropDown.ActionBar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="12 PM" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout01"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancelDateTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/btnAceptDateTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+</RelativeLayout>

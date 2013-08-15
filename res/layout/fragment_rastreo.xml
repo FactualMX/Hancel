@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/IniciaTrackId"
+        style="@style/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Programar Rastreo..."
+        android:visibility="gone" />
+
+    
+   <LinearLayout android:layout_width="match_parent" 
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:id="@+id/layoutCurrentTrack"
+       android:visibility="visible"
+       >
+       
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/TextoInstruccion"
+            android:layout_marginTop="7dp"
+            android:text="@string/current_track_info"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7dp" >
+
+            <TextView
+                android:id="@+id/txtUltimaAlerta"
+                style="@style/TextoCabecera"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="15 - Abril - 08:30"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBtnCancelTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancelCurrentTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            style="@style/button"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/btnModifyCurrentTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              style="@style/button"
+            android:layout_weight="1.0"
+            android:text="Modificar" />
+    </LinearLayout>
+
+     </LinearLayout>
+    
+    
+</RelativeLayout>

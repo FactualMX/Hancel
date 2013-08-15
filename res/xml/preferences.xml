@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:holo="http://schemas.android.com/apk/res-auto">
+<PreferenceCategory
+            holo:title="Rastreo">
+
+        <ListPreference holo:id="@+id/pref_key_intervalo"
+	    holo:title="Intervalo en Seguimiento"
+	    holo:summary="Elige el intervalo con el que se registrará en el servidor"
+	     holo:entries="@array/intervalo"
+	      holo:entryValues="@array/intervalo_values"
+	      holo:defaultValue="5"
+	    /> 
+	           <ListPreference holo:id="@+id/pref_key_intervalo_recordatorio"
+	    holo:title="Intervalo Para Recordatorio"
+	    holo:summary="Intervalo el cual se preguntará al usuario si se encuentra bien"
+	     holo:entries="@array/intervalo_recordatorio_text"
+	      holo:entryValues="@array/intervalo_recordatorio_values"
+	      holo:defaultValue="2"
+	    /> 
+	    <EditTextPreference holo:id="@+id/pref_key_custom_msg"
+	    holo:title="Mensaje Personalizado"
+	    holo:defaultValue="Ayuda!!! Algo me ha pasado!!!"
+	    holo:summary="Mensaje que se enviará a tus contactos"
+	    />    
+	       <PreferenceScreen
+          holo:id="@+id/pref_key_select_ong"
+          holo:title="Seleccionar ONG's"
+          holo:summary="Selecciona las ONG's para enviar Alerta" />
+	       
+	     <PreferenceScreen
+          holo:id="@+id/pref_contacts_key"
+          holo:title="Seleccionar Contactos"
+          holo:summary="Contactos a enviar alerta" />
+	     <RingtonePreference holo:id="@+id/pref_ringtone_pref"
+	         holo:title="Selecciona Sonido de Alarma"
+	         holo:summary="Selecciona el tono de la Alarma cuando se establezca la hora de fin de rastreo"
+	         holo:defaultValue="content://settings/system/notification_sound"
+	         holo:showDefault="true"
+	         holo:showSilent="true"
+	         holo:ringtoneType="alarm|ringtone"
+	         />
+	     <ListPreference holo:id="@+id/pref_panic_delay"
+	    holo:title="Intervalo para enviar los SMS"
+	    holo:summary="Intervalo para enviar la alerta por SMS en caso que no se detenga correctamente la Alarma de rastreo"
+	     holo:entries="@array/intervalo_panic_sms"
+	      holo:entryValues="@array/intervalo_panic_sms_values"
+	      holo:defaultValue="3"
+	    /> 
+		<org.hansel.myAlert.Preferences.CerrarSesion holo:title="Cerrar Sesión"
+		    holo:summary="Al cerrar sesión se inhabilitará el botón de pánico"
+		    holo:id="@+id/pref_key_logout"
+		    />
+    </PreferenceCategory>
+ 
+    
+</PreferenceScreen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/clock_01"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_02"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_03"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_04"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_05"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_06"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_07"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_08"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_09"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_10"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_11"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_12"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_13"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_14"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_15"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/clock_16"
+        android:duration="200"/>
+
+</animation-list>

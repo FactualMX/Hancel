@@ -1,0 +1,176 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Login form -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.9"
+            >
+        </android.support.v4.view.ViewPager>
+        <com.viewpagerindicator.CirclePageIndicator android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/pagerIndicator"
+            android:layout_weight="0.1"
+            />
+
+        <ScrollView
+            android:id="@+id/login_form1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <!-- Header  Starts -->
+                <!-- Header Ends -->
+                <!--
+        Footer Start 
+        <LinearLayout android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:background="@layout/footer_repeat"
+                android:layout_alignParentBottom="true">
+        </LinearLayout>        -->
+                <!-- Footer Ends -->
+
+
+                <!-- Login Form -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    style="@style/panelAcciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:padding="10dip" >
+
+                    <!-- Email Label -->
+
+                    <TextView
+                        style="@style/labelText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Usuario" />
+
+                    <EditText
+                        android:id="@+id/txtUser"
+                        style="@style/inputText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="@string/Usuario"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <!-- Password Label -->
+
+                    <TextView
+                        style="@style/labelText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Contrasenia" />
+
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        style="@style/inputText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Contrasenia"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+
+                    <!-- Login button -->
+
+                    <TextView
+                        android:id="@+id/tvError"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/errores"
+                        android:textColor="#FF0000"
+                        android:visibility="gone" />
+                    <!-- Link to Registration Screen -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/link_to_register"
+                            style="@style/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/Registrarme" />
+
+                        <Button
+                            android:id="@+id/btnLogin"
+                            style="@style/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/Ingresar" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Login Form Ends -->
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</merge>
