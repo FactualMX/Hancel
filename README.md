@@ -40,6 +40,10 @@ Tanto **Login** como **HoloEverywhere** requieren como dependencia a **Actionbar
 
 ![Referencias](http://i.imgur.com/yoWKBan.png)
 
+Hancel utiliza ACRA como sistema de log. Como actualmente estamos importando el JAR en lugar de compilar como biblioteca, debes verificar que el proyecto **Holo Everywhere Library** incluya la ruta correcta al archivo `acra-4.5.0.jar` localizado en la carpeta `libs` de Holo Everywhere Library
+
+![Imgur](http://i.imgur.com/Xeh2JSc.png)
+
 # ¿Cómo puedo contribuir?
 
 El proyecto Hancel ha sido desarrollado como software libre. Por tanto, la aplicación puede ser modificada siempre y cuando se haga bajo los términos y condiciones de la Licencia Pública General GNU publicada por la Free Software Foundation, ya sea en su versión 2.0 o cualquier otra posterior.
@@ -52,4 +56,8 @@ Hancel es un proyecto de un grupo de reporteros y editores que buscan contribuir
 La [Fundación para la Libertad de Prensa en Colombia](http://www.flip.org.co/) asesoró el desarrollo del prototipo, mismo que está siendo probado simultáneamente en México y Colombia. Hancel es un proyecto de Factual, organización dedicada a concebir y apoyar proyectos con impacto social en América Latina a través de la generación de herramientas tecnológicas y estrategias de comunicación.
 
 
+# ¿Quiéres probar la app?
 
+Puedes bajar un APK pre-compilado aquí:
+
+[Hancel](https://github.com/juanjcsr/Hancel/blob/master/hancel-project/bin/Login.apk?raw=true)
