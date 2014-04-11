@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/stepWrapperONG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TextoCabecera"
+            android:text="@string/registro3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextoInstruccion"
+            android:text="@string/ingreseONGS" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewOng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ongButtonWrapper"
+        android:layout_below="@+id/stepWrapperONG"
+        android:layout_marginTop="4dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ongButtonWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnCancelaOng"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/btnAceptaOng"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Aceptar" />
+    </LinearLayout>
+
+</RelativeLayout>

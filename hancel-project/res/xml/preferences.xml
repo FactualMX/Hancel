@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:holo="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory holo:title="Rastreo" >
+        <ListPreference
+            holo:id="@+id/pref_key_intervalo"
+            holo:defaultValue="5"
+            holo:entries="@array/intervalo"
+            holo:entryValues="@array/intervalo_values"
+            holo:summary="Elige el intervalo con el que se registrará en el servidor"
+            holo:title="Intervalo en Seguimiento" />
+        <ListPreference
+            holo:id="@+id/pref_key_intervalo_recordatorio"
+            holo:defaultValue="2"
+            holo:entries="@array/intervalo_recordatorio_text"
+            holo:entryValues="@array/intervalo_recordatorio_values"
+            holo:summary="Intervalo el cual se preguntará al usuario si se encuentra bien"
+            holo:title="Intervalo Para Recordatorio" />
+
+        <EditTextPreference
+            holo:id="@+id/pref_key_custom_msg"
+            holo:defaultValue="Algo me ha pasado!"
+            holo:summary="Mensaje que se enviará a tus contactos"
+            holo:title="Mensaje Personalizado" />
+
+        <PreferenceScreen
+            holo:id="@+id/pref_key_select_ong"
+            holo:summary="Selecciona las ONG&apos;s para enviar Alerta"
+            holo:title="Seleccionar ONG&apos;s" />
+        <PreferenceScreen
+            holo:id="@+id/pref_contacts_key"
+            holo:summary="Contactos a enviar alerta"
+            holo:title="Seleccionar Contactos" />
+ 		<Preference
+            holo:id="@+id/pref_pic"
+            holo:title="Foto para el widget" />
+        
+        <RingtonePreference
+            holo:id="@+id/pref_ringtone_pref"
+            holo:defaultValue="content://settings/system/notification_sound"
+            holo:ringtoneType="alarm|ringtone"
+            holo:showDefault="true"
+            holo:showSilent="true"
+            holo:summary="Selecciona el tono de la Alarma cuando se establezca la hora de fin de rastreo"
+            holo:title="Selecciona Sonido de Alarma" />
+
+        <ListPreference
+            holo:id="@+id/pref_panic_delay"
+            holo:defaultValue="3"
+            holo:entries="@array/intervalo_panic_sms"
+            holo:entryValues="@array/intervalo_panic_sms_values"
+            holo:summary="Intervalo para enviar la alerta por SMS en caso que no se detenga correctamente la Alarma de rastreo"
+            holo:title="Intervalo para enviar los SMS" />
+
+        <Preference
+            holo:id="@+id/pref_legal"
+            holo:summary="Licencia GPL"
+            holo:title="Avisos Legals" />
+        <Preference
+            holo:id="@+id/pref_about"
+            holo:title="Acerca de la Aplicación" />
+
+        <org.hansel.myAlert.Preferences.CerrarSesion
+            holo:id="@+id/pref_key_logout"
+            holo:summary="Al cerrar sesión se inhabilitará el botón de pánico"
+            holo:title="Cerrar Sesión" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

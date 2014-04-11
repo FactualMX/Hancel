@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_error">#e41915</color>
+    <color name="android_green">#669900</color>
+    <color name="blue_light">#ff33b5e5</color>
+        <color name="BlueICS">#33B5E5</color>
+         <color name="rojo_logo">#EF4147</color>
+             <color name="white">#FFffffff</color>
+         
+</resources>
