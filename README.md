@@ -1,6 +1,19 @@
 hancel-factual
 ==============
 
+Hancel es un proyecto de código libre iniciado en 2012 por la organización civil mexicana [Factual] (http://www.factual.com.mx/).
+
+La aplicación fue diseñada con el objetivo de construir un puente de comunicación entre periodistas y organizaciones dedicadas a la protección de la libertad de expresión. Factual dejó de trabajar en el proyecto desde marzo de 2014.
+
+Si eres un periodista o una organización en búsqueda de información sobre botones de pánico, no hay necesidad de empezar desde cero. Puedes comenzar con el código de Hancel que se encuentra en nuestro [Github.] (https://github.com/FactualMX/Hancel)
+Importante: el código de Hancel necesita someterse a una auditoria de seguridad.
+
+Hay varias organizaciones trabajando en aplicaciones de botones de pánico, tales como [Panic Button] (https://panicbutton.io/) [Circle of Six] (http://www.circleof6app.com/) [Reporta] (http://reporta.org/) No todos estos proyectos son de código abierto y esta mención no representa una recomendación.
+
+Factual no es responsable por los cambios o modificaciones posteriores al código de Hancel, y tampoco es responsable de cualquiera otra aplicación que se haya desarrollado con parte del código original, incluidas aquellas que pudieran utilizar el mismo nombre.
+
+#Sobre el código de Hancel (Última actualización : abril 2014).
+
 Hancel vincula a periodistas con colegas y organizaciones dedicadas a proteger la libertad de expresión a través de su teléfono celular.
 
 América Latina es una de las regiones más peligrosas del mundo para ejercer el periodismo. Hancel es una aplicación para teléfonos móviles que permite a periodistas crear redes integradas por colegas y organizaciones y planear con antelación coberturas en zonas de riesgo. Además cuenta con un botón de pánico para reportar agresiones en tiempo real y puede utilizarse para programar una alerta automática en caso de algún incidente.
