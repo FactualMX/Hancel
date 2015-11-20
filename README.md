@@ -8,7 +8,7 @@ La aplicación fue diseñada con el objetivo de construir un puente de comunicac
 Si eres un periodista o una organización en búsqueda de información sobre botones de pánico, no hay necesidad de empezar desde cero. Puedes comenzar con el código de Hancel que se encuentra en nuestro [Github.] (https://github.com/FactualMX/Hancel)
 Importante: el código de Hancel necesita someterse a una auditoria de seguridad.
 
-Hay varias organizaciones trabajando en aplicaciones de botones de pánico, tales como [Panic Button] (https://panicbutton.io/) [Circle of Six] (http://www.circleof6app.com/) [Reporta] (http://reporta.org/) No todos estos proyectos son de código abierto y esta mención no representa una recomendación.
+Hay varias organizaciones trabajando en aplicaciones de botones de pánico, tales como [Panic Button,] (https://panicbutton.io/) [Circle of Six,] (http://www.circleof6app.com/) y [Reporta.] (http://reporta.org/) No todos estos proyectos son de código abierto y esta mención no representa una recomendación.
 
 Factual no es responsable por los cambios o modificaciones posteriores al código de Hancel, y tampoco es responsable de cualquiera otra aplicación que se haya desarrollado con parte del código original, incluidas aquellas que pudieran utilizar el mismo nombre.
 
